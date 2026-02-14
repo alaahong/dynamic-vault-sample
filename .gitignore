@@ -1,0 +1,59 @@
+# --- Java / Maven ---
+/target/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+*.log
+logs/
+build/
+out/
+
+# Maven wrapper
+/.mvn/wrapper/maven-wrapper.jar
+
+# Maven generated files
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# IDEs
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+.recommenders/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.local
+.vault-token
+vault-file/
+
+# Containers / build artifacts
+docker-compose.override.yml
+.dockerignore
+
+# Node / misc
+node_modules/
+*.swp
+*.tmp
+
+# Keep local debug/testing files out
+/.cache/
+/.history/

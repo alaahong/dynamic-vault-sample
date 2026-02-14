@@ -1,8 +1,0 @@
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/VaultRotateApplication.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/config/DataSourceConfig.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/controller/RotationController.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/datasource/DelegatingDataSource.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/repository/SampleRepository.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/service/DataSourceManager.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/service/RotationService.java
-/workspaces/dynamic-vault-sample/src/main/java/com/example/vaultrotate/service/VaultDbCredentialsService.java
