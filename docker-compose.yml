@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: vaultdemo
+      POSTGRES_PASSWORD: vaultdemo
+      POSTGRES_DB: demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  vault:
+    image: vault:1.14.0
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root
+      VAULT_DEV_LISTEN_ADDRESS: '0.0.0.0:8200'
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - "8200:8200"
+    command: server -dev -dev-root-token-id=root -dev-listen-address=0.0.0.0:8200
+    volumes:
+      - ./vault-file:/vault/file
+
+volumes:
+  pgdata:
